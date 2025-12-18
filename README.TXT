@@ -1,30 +1,24 @@
-TechSupport - the DodgySoft Technical support system.
+Part I:
 
-This project is part of the material for the book
-
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
-
-This project is discussed in chapter 6.
-
-This project aims to implements a technical support system for customers of 
-the DodgySoft software company. Users can describe their software problems and 
-get advice instantly!
-
-The idea is based on Eliza - a famous program described by Joseph Weizenbaum 
-in 1966. (Do a web search for "Eliza" and "Weizenbaum" if you want to know 
-more about this.)
-
-In fact, it is much more primitive than Eliza. But that's enough to match the 
-quality of many software companies' technical support advice...  ;-)
-
-To start this program, create a SupportSystem object and execute the "start" 
-method.
-
-Then start describing your problem by typing in the terminal window.
-
-The purpose of this project is to demonstrate and study library classes, such 
-as ArrayList, HashMap, HashSet, and Random.
-
-This project is only a first, rudimentary step towards the full solution.
+3. startsWith(String prefix)
+   - Checks if the string starts with the prefix you put in
+   ex: String text = "computer";
+       text.startsWith("com");
+    
+   startsWith(String prefix, int toffset)
+   - Checks if the string starts with the prefix you put in at a specific index
+   ex: String text = "computer";
+       text.startsWith("put", 3) //p is at index 3)
+   
+4. endsWith(String suffix)
+   parameter: String suffix
+   return type: boolean (true or false)
+   
+5. length()
+   - no parameters; it just returns the length of the string with an Integer
+   
+6. I searched for the String class in the Java Libraries first. Then I did "control f" 
+   to type in keywords that would help me find the method I want. Then I would read through
+   the methods that had those keywords.
+   
+7. String newText = text.trim();
