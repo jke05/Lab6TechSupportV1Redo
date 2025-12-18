@@ -25,4 +25,13 @@ Part I:
 
 10. boolean
 
-11. 
+12. Random is in java.util.random
+    Random generates random values
+    Random generator = new Random();
+    int number = generator.nextInt(10); //generates a random number between 0 and 9
+    
+13. Random generator = new Random();
+    int number = generator.nextInt();
+    return number;
+    
+14. 

@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /**
  * This class implements a technical support system. It is the top level class 
@@ -41,7 +42,7 @@ public class SupportSystem
             String input = reader.getInput();
             String changedInput = input.toLowerCase();
 
-            if(changedInput.equals("bye")) {
+            if(changedInput.contains("bye")) {
                 finished = true;
             }
             else {
@@ -71,5 +72,11 @@ public class SupportSystem
     private void printGoodbye()
     {
         System.out.println("Nice talking to you. Bye...");
+    }
+    
+    public int randomGen(){
+        Random generator = new Random();
+        int number = generator.nextInt();
+        return number;
     }
 }
