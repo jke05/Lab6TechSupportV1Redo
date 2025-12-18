@@ -8,7 +8,9 @@ import java.util.Random;
  */
 public class RandomTester
 {
-    
+    private Random generator = new Random();
+    private Random multiGenerator = new Random();
+    private Random dice = new Random();
     
     public RandomTester()
     {
@@ -16,16 +18,19 @@ public class RandomTester
     }
 
     public int printOneRandom(){
-        Random generator = new Random();
         int number = generator.nextInt();
         return number;
     }
     
     public void printMultiRandom(int howMany){
-        Random generator = new Random();
         for (int i = 0; i < howMany; i++){
-            int number = generator.nextInt();
+            int number = multiGenerator.nextInt();
             System.out.println(number);
         }
+    }
+    
+    public int rollDice(){
+        int roll = dice.nextInt(6) + 1;
+        return roll;
     }
 }
