@@ -34,4 +34,4 @@ Part I:
     int number = generator.nextInt();
     return number;
     
-14. 
+15. 0-99
