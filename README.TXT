@@ -22,3 +22,7 @@ Part I:
    the methods that had those keywords.
    
 7. String newText = text.trim();
+
+10. boolean
+
+11. 

@@ -41,7 +41,7 @@ public class SupportSystem
             String input = reader.getInput();
             String changedInput = input.toLowerCase();
 
-            if(changedInput.contains("bye")) {
+            if(changedInput.equals("bye")) {
                 finished = true;
             }
             else {
